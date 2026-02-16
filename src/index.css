@@ -1,3 +1,153 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Custom scrollbar styles */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2563eb;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1d4ed8;
+}
+
+/* Smooth transitions */
+* {
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+/* Animation for fade-in */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease;
+}
+
+.slide-down {
+  animation: slideDown 0.5s ease;
+}
+
+/* Custom button hover effects */
+button {
+  position: relative;
+  overflow: hidden;
+}
+
+button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  transition: left 0.3s ease;
+}
+
+button:hover::before {
+  left: 100%;
+}
+
+/* Input focus states */
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.15);
+  border-color: #2563eb;
+}
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Card shadow effects */
+.card-shadow {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.card-shadow:hover {
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+/* Smooth page transitions */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Better focus states for accessibility */
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  outline: 3px solid #2563eb;
+  outline-offset: 2px;
+}
+
+/* Better link styling */
+a {
+  text-decoration: none;
+}
+
+/* Improved form elements */
+input, select, textarea {
+  font-family: inherit;
+}
+
+/* Better placeholder styling */
+::placeholder {
+  color: #d1d5db;
+  opacity: 1;
+}
+
+/* Loading animation */
+@keyframes shimmer {
+  0% {
+    background-position: -1200px 0;
+  }
+  100% {
+    background-position: calc(1200px + 100%) 0;
+  }
+}
+
+.shimmer {
+  animation: shimmer 2s infinite;
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 1200px 100%;
+}
+
