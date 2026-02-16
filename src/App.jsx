@@ -33,7 +33,10 @@ function App() {
             <SearchCard onSearch={handleSearch} />
           </div>
         </div>
-      </div>\n\n      {/* MAIN CONTENT */}\n      <div className="max-w-7xl mx-auto px-4 md:px-8 py-20">
+      </div>
+
+      {/* MAIN CONTENT */}
+      <div className="max-w-7xl mx-auto px-4 md:px-8 py-20">
         {showResults ? (
           <div>
             <button

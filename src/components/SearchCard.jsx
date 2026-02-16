@@ -87,8 +87,8 @@ export default function SearchCard({ onSearch }) {
           <button
             onClick={handleSwap}
             className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-full p-3 border-2 border-gray-200 shadow-md hover:bg-blue-50 hover:border-blue-500 hover:shadow-lg transition duration-300 -z-10"
-            {/* [FIX] Should be z-10 */}
           >
+            {/* [FIX] Should be z-10 */}
             <svg className="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
             </svg>
