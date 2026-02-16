@@ -12,7 +12,9 @@ export default function Navbar() {
               </svg>
             </div>
             <div>
-              <h1 className="text-2xl md:text-3xl font-bold text-white">Travel<span className="text-blue-100">Go</span></h1>
+              {/* [BUG - COLOR & CONTRAST] Logo text nearly invisible due to low contrast */}
+              <h1 className="text-2xl md:text-3xl font-bold text-gray-400">Travel<span className="text-blue-100">Go</span></h1>
+              {/* [FIX] Should be text-white */}
               <p className="text-xs text-blue-100 hidden sm:block leading-none">Flight Booking</p>
             </div>
           </div>

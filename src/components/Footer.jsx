@@ -2,7 +2,9 @@ import React from 'react';
 
 export default function Footer() {
   return (
-    <footer className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white py-16 md:py-20 mt-24">
+    <footer className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white py-16 md:py-20 -mt-96">
+      {/* [BUG - SPACING] Negative margin causes footer to overlap page content */}
+      {/* [FIX] Should be mt-24 */}
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
           {/* ABOUT */}

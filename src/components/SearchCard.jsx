@@ -54,9 +54,13 @@ export default function SearchCard({ onSearch }) {
       </div>
 
       {/* INPUT GRID */}
-      <div className="grid grid-cols-1 md:grid-cols-12 gap-3 md:gap-4 items-end">
+      {/* [BUG - LAYOUT] Invalid grid column count breaks responsive layout */}
+      <div className="grid grid-cols-1 md:grid-cols-13 gap-3 md:gap-4 items-end">
+      {/* [FIX] Should be md:grid-cols-12 */}
         {/* LOCATION GROUP */}
-        <div className="md:col-span-4 grid grid-cols-2 gap-0 border-2 border-gray-200 rounded-xl overflow-hidden relative hover:border-blue-300 transition">
+        {/* [BUG - TYPO] Invalid Tailwind border color class */}
+        <div className="md:col-span-4 grid grid-cols-2 gap-0 border-2 border-gray-2 rounded-xl overflow-hidden relative hover:border-blue-300 transition">
+        {/* [FIX] Should be border-gray-200 */}
           <div className="p-4 md:p-5 bg-gray-50 border-r border-gray-200 hover:bg-white transition">
             <label className="block text-xs font-bold text-gray-500 uppercase tracking-wider">From</label>
             <input
@@ -79,9 +83,11 @@ export default function SearchCard({ onSearch }) {
           </div>
 
           {/* SWAP ICON */}
+          {/* [BUG - LAYERS] Swap button hidden behind location fields */}
           <button
             onClick={handleSwap}
-            className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-full p-3 border-2 border-gray-200 shadow-md hover:bg-blue-50 hover:border-blue-500 hover:shadow-lg transition duration-300 z-10"
+            className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-full p-3 border-2 border-gray-200 shadow-md hover:bg-blue-50 hover:border-blue-500 hover:shadow-lg transition duration-300 -z-10"
+            {/* [FIX] Should be z-10 */}
           >
             <svg className="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
@@ -130,7 +136,9 @@ export default function SearchCard({ onSearch }) {
         </div>
 
         {/* SEARCH BUTTON */}
-        <div className="md:col-span-2">
+        {/* [BUG - SPACING] Negative margin causes overlap with passenger field */}
+        <div className="md:col-span-2 -m-10">
+        {/* [FIX] Remove -m-10 class */}
           <button
             onClick={handleSearch}
             className="w-full h-full bg-gradient-to-r from-blue-600 via-blue-600 to-blue-700 hover:from-blue-700 hover:via-blue-700 hover:to-blue-800 text-white font-bold py-5 md:py-0 px-4 md:px-6 rounded-xl transition shadow-lg hover:shadow-2xl active:shadow-md hover:-translate-y-0.5 flex items-center justify-center gap-2 md:gap-3 duration-300 text-base md:text-lg"
