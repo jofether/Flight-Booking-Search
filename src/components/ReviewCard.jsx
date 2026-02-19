@@ -23,9 +23,7 @@ export default function ReviewCard({ name, rating, comment, date, image }) {
             </div>
           </div>
           
-          {/* [BUG - COLOR & CONTRAST] Review text invisible on white background */}
           <p className="text-gray-600 mt-4 leading-relaxed text-base" style={{color: '#f3f4f6'}}>{comment}</p>
-          {/* [FIX] Remove inline style or use text-gray-600 class */}
         </div>
       </div>
     </div>

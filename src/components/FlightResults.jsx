@@ -77,15 +77,11 @@ export default function FlightResults({ searchData }) {
             className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition duration-300 p-7 md:p-8 cursor-pointer border-2 border-transparent hover:border-blue-300 hover:-translate-y-1"
             onClick={() => setSelectedFlight(flight.id)}
           >
-            {/* [BUG - LAYOUT] Changed grid to flex flex-col causing vertical stacking */}
             <div className="flex flex-col gap-6 md:gap-4 items-start">
-            {/* [FIX] Should be grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-4 items-center */}
               {/* AIRLINE HEADER */}
               <div className="md:col-span-2">
                 <p className="text-xl font-bold text-gray-900">{flight.airline}</p>
-                {/* [BUG - TYPO] Invalid text size class text-3xxl */}
                 <div className="text-3xxl mt-1">{flight.image}</div>
-                {/* [FIX] Should be text-3xl */}
               </div>
 
               {/* TIMES & DURATION */}
