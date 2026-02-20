@@ -1,0 +1,155 @@
+{
+  "repository": "Flight Booking Search",
+  "bugs": [
+    {
+      "bug_category": "Spacing",
+      "bug_type": "margin-top",
+      "file_modified": "src/components/Footer.jsx",
+      "line_number": 5,
+      "clean_code": "<footer className=\"bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white py-16 md:py-20 mt-24\">",
+      "buggy_code": "<footer className=\"bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white py-16 md:py-20 -mt-96\">",
+      "css_selector": "footer",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "bug_category": "Layout",
+      "bug_type": "grid",
+      "file_modified": "src/components/FlightResults.jsx",
+      "line_number": 81,
+      "clean_code": "<div className=\"grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-4 items-center\">",
+      "buggy_code": "<div className=\"flex flex-col gap-6 md:gap-4 items-start\">",
+      "css_selector": "flight-card",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "bug_category": "Typo",
+      "bug_type": "text-size",
+      "file_modified": "src/components/FlightResults.jsx",
+      "line_number": 85,
+      "clean_code": "<div className=\"text-3xl mt-1\">{flight.image}</div>",
+      "buggy_code": "<div className=\"text-3xxl mt-1\">{flight.image}</div>",
+      "css_selector": ".text-3xxl",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "bug_category": "Color",
+      "bug_type": "text-color",
+      "file_modified": "src/components/Navbar.jsx",
+      "line_number": 15,
+      "clean_code": "<h1 className=\"text-2xl md:text-3xl font-bold text-white\">Travel<span className=\"text-blue-100\">Go</span></h1>",
+      "buggy_code": "<h1 className=\"text-2xl md:text-3xl font-bold text-gray-400\">Travel<span className=\"text-blue-100\">Go</span></h1>",
+      "css_selector": "h1",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "bug_category": "Layers",
+      "bug_type": "position",
+      "file_modified": "src/components/PromoCard.jsx",
+      "line_number": 5,
+      "clean_code": "<div className=\"bg-gradient-to-br from-blue-500 via-blue-600 to-blue-700 rounded-2xl shadow-xl p-8 text-white hover:shadow-2xl transition duration-300 transform hover:-translate-y-2 group overflow-hidden relative\">",
+      "buggy_code": "<div className=\"bg-gradient-to-br from-blue-500 via-blue-600 to-blue-700 rounded-2xl shadow-xl p-8 text-white hover:shadow-2xl transition duration-300 transform hover:-translate-y-2 group overflow-hidden relative absolute\">",
+      "css_selector": "PromoCard",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "bug_category": "Color",
+      "bug_type": "color",
+      "file_modified": "src/components/ReviewCard.jsx",
+      "line_number": 26,
+      "clean_code": "<p className=\"text-gray-600 mt-4 leading-relaxed text-base\">{comment}</p>",
+      "buggy_code": "<p className=\"text-gray-600 mt-4 leading-relaxed text-base\" style={{color: '#f3f4f6'}}>{comment}</p>",
+      "css_selector": ".text-gray-600",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "bug_category": "Typo",
+      "bug_type": "grid-columns",
+      "file_modified": "src/components/SearchCard.jsx",
+      "line_number": 57,
+      "clean_code": "<div className=\"grid grid-cols-1 md:grid-cols-12 gap-3 md:gap-4 items-end\">",
+      "buggy_code": "<div className=\"grid grid-cols-1 md:grid-cols-13 gap-3 md:gap-4 items-end\">",
+      "css_selector": ".SearchCard-input-grid",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "bug_category": "Typo",
+      "bug_type": "border-color",
+      "file_modified": "src/components/SearchCard.jsx",
+      "line_number": 59,
+      "clean_code": "<div className=\"md:col-span-4 grid grid-cols-2 gap-0 border-2 border-gray-200 rounded-xl overflow-hidden relative hover:border-blue-300 transition\">",
+      "buggy_code": "<div className=\"md:col-span-4 grid grid-cols-2 gap-0 border-2 border-gray-2 rounded-xl overflow-hidden relative hover:border-blue-300 transition\">",
+      "css_selector": ".location-group",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "bug_category": "Layers",
+      "bug_type": "z-index",
+      "file_modified": "src/components/SearchCard.jsx",
+      "line_number": 81,
+      "clean_code": "className=\"absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-full p-3 border-2 border-gray-200 shadow-md hover:bg-blue-50 hover:border-blue-500 hover:shadow-lg transition duration-300 z-10\"",
+      "buggy_code": "className=\"absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-full p-3 border-2 border-gray-200 shadow-md hover:bg-blue-50 hover:border-blue-500 hover:shadow-lg transition duration-300 -z-10\"",
+      "css_selector": ".swap-button",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "bug_category": "Spacing",
+      "bug_type": "margin",
+      "file_modified": "src/components/SearchCard.jsx",
+      "line_number": 125,
+      "clean_code": "<div className=\"md:col-span-2\">",
+      "buggy_code": "<div className=\"md:col-span-2 -m-10\">",
+      "css_selector": ".search-button-container",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    }
+  ]
+}
