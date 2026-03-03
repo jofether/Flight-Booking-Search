@@ -12,7 +12,7 @@
       "css_selector": "footer",
       "bounding_box": {
         "x": 0,
-        "y": 3239,
+        "y": 2800,
         "width": 1280,
         "height": 433
       }
@@ -25,7 +25,7 @@
       "line_number": 81,
       "clean_code": "<div className=\"grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-4 items-center\">",
       "buggy_code": "<div className=\"flex flex-col gap-6 md:gap-4 items-start\">",
-      "css_selector": "flight-card",
+      "css_selector": "div[class*=\"space-y-5\"] > div[class*=\"bg-white\"] > div",
       "bounding_box": {
         "x": 66,
         "y": 306,
@@ -41,10 +41,10 @@
       "line_number": 85,
       "clean_code": "<div className=\"text-3xl mt-1\">{flight.image}</div>",
       "buggy_code": "<div className=\"text-3xxl mt-1\">{flight.image}</div>",
-      "css_selector": ".text-3xxl",
+      "css_selector": "div[class*=\"space-y-5\"] > div[class*=\"bg-white\"] div.mt-1",
       "bounding_box": {
         "x": 94,
-        "y": -1103,
+        "y": 350,
         "width": 526,
         "height": 28
       }
@@ -57,7 +57,7 @@
       "line_number": 15,
       "clean_code": "<h1 className=\"text-2xl md:text-3xl font-bold text-white\">Travel<span className=\"text-blue-100\">Go</span></h1>",
       "buggy_code": "<h1 className=\"text-2xl md:text-3xl font-bold text-gray-400\">Travel<span className=\"text-blue-100\">Go</span></h1>",
-      "css_selector": "h1",
+      "css_selector": "nav h1",
       "bounding_box": {
         "x": 88,
         "y": 20,
@@ -73,7 +73,7 @@
       "line_number": 5,
       "clean_code": "<div className=\"bg-gradient-to-br from-blue-500 via-blue-600 to-blue-700 rounded-2xl shadow-xl p-8 text-white hover:shadow-2xl transition duration-300 transform hover:-translate-y-2 group overflow-hidden relative\">",
       "buggy_code": "<div className=\"bg-gradient-to-br from-blue-500 via-blue-600 to-blue-700 rounded-2xl shadow-xl p-8 text-white hover:shadow-2xl transition duration-300 transform hover:-translate-y-2 group overflow-hidden relative absolute\">",
-      "css_selector": "PromoCard",
+      "css_selector": "div[class*=\"bg-gradient-to-br\"][class*=\"rounded-2xl\"]",
       "bounding_box": {
         "x": 32,
         "y": 484,
@@ -89,7 +89,7 @@
       "line_number": 26,
       "clean_code": "<p className=\"text-gray-600 mt-4 leading-relaxed text-base\">{comment}</p>",
       "buggy_code": "<p className=\"text-gray-600 mt-4 leading-relaxed text-base\" style={{color: '#f3f4f6'}}>{comment}</p>",
-      "css_selector": ".text-gray-600",
+      "css_selector": "div[class*=\"rounded-2xl\"][class*=\"shadow-lg\"] p.text-gray-600",
       "bounding_box": {
         "x": 149,
         "y": 929,
@@ -105,10 +105,10 @@
       "line_number": 57,
       "clean_code": "<div className=\"grid grid-cols-1 md:grid-cols-12 gap-3 md:gap-4 items-end\">",
       "buggy_code": "<div className=\"grid grid-cols-1 md:grid-cols-13 gap-3 md:gap-4 items-end\">",
-      "css_selector": ".SearchCard-input-grid",
+      "css_selector": "div.bg-white.rounded-3xl > div.grid.items-end",
       "bounding_box": {
         "x": 72,
-        "y": -28,
+        "y": 100,
         "width": 1136,
         "height": 328
       }
@@ -121,11 +121,11 @@
       "line_number": 59,
       "clean_code": "<div className=\"md:col-span-4 grid grid-cols-2 gap-0 border-2 border-gray-200 rounded-xl overflow-hidden relative hover:border-blue-300 transition\">",
       "buggy_code": "<div className=\"md:col-span-4 grid grid-cols-2 gap-0 border-2 border-gray-2 rounded-xl overflow-hidden relative hover:border-blue-300 transition\">",
-      "css_selector": ".location-group",
+      "css_selector": "div.md\\:col-span-4.grid.border-2.rounded-xl",
       "bounding_box": {
         "x": 72,
-        "y": -1145,
-        "width": 1136,
+        "y": 110,
+        "width": 516,
         "height": 111
       }
     },
@@ -137,12 +137,12 @@
       "line_number": 81,
       "clean_code": "className=\"absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-full p-3 border-2 border-gray-200 shadow-md hover:bg-blue-50 hover:border-blue-500 hover:shadow-lg transition duration-300 z-10\"",
       "buggy_code": "className=\"absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-full p-3 border-2 border-gray-200 shadow-md hover:bg-blue-50 hover:border-blue-500 hover:shadow-lg transition duration-300 -z-10\"",
-      "css_selector": ".swap-button",
+      "css_selector": "button.absolute.rounded-full.bg-white.p-3",
       "bounding_box": {
         "x": 616,
-        "y": 4,
+        "y": 30,
         "width": 47,
-        "height": 47
+        "height": 300
       }
     },
     {
@@ -153,11 +153,11 @@
       "line_number": 125,
       "clean_code": "<div className=\"md:col-span-2\">",
       "buggy_code": "<div className=\"md:col-span-2 -m-10\">",
-      "css_selector": ".search-button-container",
+      "css_selector": "div.bg-white.rounded-3xl > div.grid > div.md\\:col-span-2:last-of-type",
       "bounding_box": {
         "x": 1110,
-        "y": -805,
-        "width": 138,
+        "y": 110,
+        "width": 200,
         "height": 28
       }
     }
