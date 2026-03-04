@@ -1,0 +1,12 @@
+{
+  "actions": [
+    {
+      "name": "bug-2-ShowFlightResults",
+      "selector": "button[class*=\"from-blue-600\"][class*=\"via-blue-600\"]"
+    },
+    {
+      "name": "bug-3-ShowFlightResults",
+      "selector": "button[class*=\"from-blue-600\"][class*=\"via-blue-600\"]"
+    }
+  ]
+}
